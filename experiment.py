@@ -1,6 +1,6 @@
 import time
 import csv
-from course_data import get_forced_backtracking_dataset_5, get_forced_backtracking_dataset_2
+from course_data import get_forced_backtracking_dataset
 from solver import Solver
 
 
@@ -10,7 +10,7 @@ def run_experiments():
     results = []
 
     for mode in modes:
-        courses = get_forced_backtracking_dataset_2()
+        courses = get_forced_backtracking_dataset()
 
         solver = Solver(courses, mode=mode)
 
