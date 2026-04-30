@@ -1,0 +1,4 @@
+courses,mode,runtime,nodes_visited,backtracks,solution_found
+15,basic,1.52587890625e-05,2,2,False
+15,mrv_degree,0.0002911090850830078,2,2,False
+15,mrv_degree_mac,0.0002040863037109375,1,1,False
