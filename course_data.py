@@ -3,71 +3,64 @@ from models import Course, Section
 
 def get_forced_backtracking_dataset():
     return [
-        Course("C1", "Course 1", 4, [
-            Section("C1-B1", ("Mon","Wed",), 540, 615),
+        Course("C1", "Internet Programming", 3, [
+            Section("C1-B1", ("Mon","Wed",), 675, 750),
         ]),
-        Course("C2", "Course 1", 4, [
-            Section("C1-B1", ("Mon","Wed",), 540, 615),
+        Course("C2", "Computer Architecture", 3, [
+            Section("C1-B1", ("Tue","Thu",), 675, 750),
         ]),
-        Course("C3", "Course 2", 3, [
-            Section("C2-B1", ("Mon", "Wed",), 540, 615),
-            Section("C2-B2", ("Mon", "Wed",), 960, 1035),
-            Section("C2-B3", ("Tue", "Thu",), 870, 945),
-            Section("C2-B4", ("Tue", "Thu",), 1020, 1095),
+        Course("C3", "Computer Architecture Lab", 1, [
+            Section("C2-B1", ("Fri",), 610, 660),
+            Section("C2-B2", ("Fri",), 675, 725),
+            Section("C2-B3", ("Fri",), 740, 790),
         ]),
-        Course("C4", "Course 1", 3, [
-            Section("C1-B1", ("Mon","Wed",), 540, 615),
+        Course("C4", "Software Development Process", 3, [
+            Section("C1-B1", ("Tue","Thu",), 585, 660),
         ]),
-        Course("C5", "Course 1", 4, [
-            Section("C1-B3", ("Tue", "Thu",), 840, 915),
+        Course("C5", "Software Development Process Lab", 1, [
+            Section("C1-B1", ("Fri",), 610, 660),
+            Section("C1-B2", ("Fri",), 675, 735),
+            Section("C1-B3", ("Fri",), 750, 800),
+            Section("C1-B4", ("Fri",), 815, 865),
 
         ]),
-        Course("C6", "Course 1", 4, [
-            Section("C1-B1", ("Mon","Wed",), 540, 615),
-            Section("C1-B3", ("Tue", "Thu",), 960, 1035),
-
+        Course("C6", "Introduction to Artificial Intelligence", 3, [
+            Section("C1-B1", ("Mon","Wed",), 780, 855),
+            Section("C1-B2", ("Mon","Wed",), 960, 1035),
         ]),
-        Course("C7", "Course 1", 3, [
-            Section("C1-B3", ("Tue", "Thu",), 840, 915),
-
+        Course("C7", "Introduction to Artificial Intelligence Lab", 1, [
+            Section("C1-B1", ("Fri",), 675, 725),
+            Section("C1-B2", ("Fri",), 740, 790),
+            Section("C1-B3", ("Fri",), 805, 855),
+            Section("C1-B4", ("Fri",), 870, 920),
         ]),
-        Course("C8", "Course 1", 4, [
-            Section("C1-B3", ("Mon", "Wed",), 540, 615),
+        Course("C8", "Human Biology", 3, [
+            Section("C1-B1", ("Mon","Wed","Fri"), 740, 790),
+            Section("C1-B2", ("Mon","Wed","Fri"), 805, 855),
         ]),
-        Course("C9", "Course 1", 3, [
-            Section("C1-B1", ("Mon","Wed",), 540, 615),
-            Section("C1-B3", ("Tue", "Thu",), 840, 915),
-
+        Course("C9", "Human Biology Lab", 1, [
+            Section("C1-B1", ("Thu"), 740, 855),
+            Section("C1-B2", ("Thu"), 870, 985),
+            Section("C1-B3", ("Thu"), 1000, 1115),
+            Section("C1-B4", ("Wed"), 480, 595),
+            Section("C1-B5", ("Wed"), 610, 725),
+            Section("C1-B6", ("Wed"), 870, 985),
+            Section("C1-B7", ("Wed"), 1000, 1115),
         ]),
-        Course("C10", "Course 1", 4, [
-            Section("C1-B1", ("Mon","Wed",), 540, 615),
-            Section("C1-B2", ("Mon", "Wed",), 960, 1035),
-            Section("C1-B3", ("Tue", "Thu",), 540, 615),
-            Section("C1-B4", ("Tue", "Thu",), 960, 1035),
-            Section("C1-B5", ("Wed", "Fri",), 900, 975),
+        Course("C10", "Automata Theory", 3, [
+            Section("C1-B1", ("Tue","Thu",), 495, 570),
         ]),
-        Course("C11", "Course 2", 3, [
-            Section("C2-B1", ("Mon", "Wed",), 540, 615),
-            Section("C2-B2", ("Mon", "Wed",), 960, 1035),
-            Section("C2-B3", ("Tue", "Thu",), 870, 945),
-            Section("C2-B4", ("Tue", "Thu",), 1020, 1095),
+        Course("C11", "Automata Theory Discussion", 1, [
+            Section("C2-B1", ("Fri",), 740, 790),
+            Section("C2-B2", ("Fri",), 805, 855),
+            Section("C2-B3", ("Fri",), 870, 920),
         ]),
-        Course("C12", "Course 3", 4, [
-            Section("C3-B1", ("Mon", "Wed", "Fri",), 540, 590),
-            Section("C3-B2", ("Mon", "Wed", "Fri",), 780, 830),
+        Course("C12", "User Interface Design and Prototyping", 3, [
+            Section("C1-B1", ("Mon","Wed",), 585, 660),
         ]),
-        Course("C13", "Course 4", 3, [
-            Section("C4-B1", ("Mon", "Wed", "Fri",), 600, 650),
-        ]),
-        Course("C14", "Course 5", 3, [
-            Section("C5-B1", ("Wed", "Fri",), 660, 735),
-            Section("C5-B2", ("Wed", "Fri",), 930, 1020),
-        ]),
-        Course("C15", "Course 1", 4, [
-            Section("C1-B1", ("Mon","Wed",), 540, 615),
-            Section("C1-B2", ("Mon", "Wed",), 960, 1035),
-            Section("C1-B3", ("Tue", "Thu",), 540, 615),
-            Section("C1-B4", ("Tue", "Thu",), 960, 1035),
-            Section("C1-B5", ("Wed", "Fri",), 900, 975),
+        Course("C13", "User Interface Design and Prototyping Discussion", 1, [
+            Section("C2-B1", ("Thu",), 545, 595),
+            Section("C2-B2", ("Thu",), 610, 660),
+            Section("C2-B3", ("Thu",), 675, 725),
         ]),
     ]
