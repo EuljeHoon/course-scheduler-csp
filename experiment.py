@@ -29,6 +29,12 @@ def run_experiments():
             "solution_found": solution is not None
         })
 
+        if solution:
+            print(f"[{mode}]")
+            for course in courses:
+                sec = solution[course.course_id]
+                print(f"{course.name}: {sec}")
+
     return results
 
 
