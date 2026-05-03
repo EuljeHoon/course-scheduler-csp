@@ -1,5 +1,9 @@
 # Course Scheduler (CSP)
 
+**Project report (PDF):** [Google Drive — CSP_Report](https://drive.google.com/file/d/17ePx45tCTg0H-fiQfF81JtXiX-ZCzgmu/view?usp=sharing) — written report for this repository.
+
+---
+
 Experimental code for a **constraint satisfaction problem (CSP)**. The algorithm tries to build a **timetable that includes every course in the dataset**: each course is a variable, each of its sections is a possible value, and the solver picks **one section per course** so that **no two chosen sections overlap in time**. (If no such full assignment exists, it returns failure.) It solves this with **backtracking** and compares **heuristics** and **constraint propagation (MAC / AC-3)**.
 
 ---
